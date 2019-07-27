@@ -28,4 +28,4 @@ chokidar.watch(fileName).on("change", () =>{
     console.log("Reloading web service data complete.");
 });
 
-app.listen(port, () => console.log(`Web Service running n port ${port}`))
+app.listen(port, () => console.log(`Web Service running on port ${port}`))
