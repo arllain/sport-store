@@ -34,7 +34,7 @@ export const CartReducer = (storeData, action) => {
             let selection = newStore.cart.find(item => item.product.id === action.payload.id);
             newStore.cartItems -= selection.quantity;
             newStore.cartPrice -= selection.quantity * selection.product.price;
-            newStore.cart = newStore.cart.filter(item => item != selection);
+            newStore.cart = newStore.cart.filter(item => item !== selection);
             return newStore;
         case ActionTypes.CART_CLEAR:
             return   {...storeData, cart: [], cartItems: 0, cartPrice: 0} 
