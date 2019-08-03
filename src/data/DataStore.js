@@ -5,5 +5,5 @@ import { CommonReducer } from "./CommonReducer";
 import { asyncActions } from "./AsyncMiddleware";
 
 export const SportsStoreDataStore 
-= createStore(CommonReducer(ShopReducer, CartReducer),
-    applyMiddleware(asyncActions));
+    = createStore(CommonReducer(ShopReducer, CartReducer), 
+        applyMiddleware(asyncActions));
